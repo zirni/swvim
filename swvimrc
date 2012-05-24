@@ -19,7 +19,7 @@ set nocompatible
 " Bundle: git://github.com/hallettj/jslint.vim.git
 " BundleCommand: cd ~/.vim/bundle/jslint.vim && rake install
 " Bundle: git://github.com/cclow/vim-bufexplorer.git
-" Bundle: git://github.com/joestelmach/lint.vim.git
+" Bundle: git://github.com/zirni/vim-jslint.git
 
 " Setup the bundles
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -36,7 +36,6 @@ colorscheme solarized
 
 " Leader setting
 let mapleader = ","
-
 set number
 set ruler
 
