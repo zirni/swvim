@@ -16,6 +16,7 @@ set nocompatible
 " Bundle: git://github.com/kchmck/vim-coffee-script.git
 " Bundle: git://github.com/ervandew/supertab.git
 " Bundle: git://github.com/cclow/vim-bufexplorer.git
+" Bundle: git://github.com/joestelmach/lint.vim.git
 
 " Setup the bundles
 runtime bundle/vim-pathogen/autoload/pathogen.vim
