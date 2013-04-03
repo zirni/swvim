@@ -22,7 +22,7 @@ set nocompatible
 " Setup the bundles
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Bundle: tpope/vim-pathogen
-call pathogen#infect('~/.vim/bundle')
+call pathogen#infect('~/.vim/bundle/{}')
 
 " Set solarized-colors
 set t_Co=256
