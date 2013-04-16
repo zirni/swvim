@@ -1,4 +1,4 @@
-set shell=/bin/sh
+set shell=/bin/zsh
 set nocompatible
 
 " Bundles for the vim plugins
@@ -15,13 +15,14 @@ set nocompatible
 " Bundle: git://github.com/msanders/snipmate.vim.git
 " Bundle: git://github.com/kchmck/vim-coffee-script.git
 " Bundle: git://github.com/ervandew/supertab.git
+" Bundle: git://github.com/groenewege/vim-less.git
 " Bundle: git://github.com/cclow/vim-bufexplorer.git
 " Bundle: git://github.com/zirni/vim-jslint.git
 
 " Setup the bundles
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " Bundle: tpope/vim-pathogen
-call pathogen#infect('~/.vim/bundle')
+call pathogen#infect('~/.vim/bundle/{}')
 
 " Set solarized-colors
 set t_Co=256
@@ -55,7 +56,7 @@ set smartcase
 
 " Tab completion
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/*,temp_gems/*,
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/plugins/*,temp_gems/*,
 
 " Status bar
 set laststatus=2
@@ -158,6 +159,10 @@ map <C-L> <C-W><C-L>
 map <C-J> <C-W><C-J>
 map <C-K> <C-W><C-K>
 
+" Vertical split right and split below
+set splitright
+set splitbelow
+
 " Open files with <leader>f
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 
@@ -182,6 +187,12 @@ map <leader>c \\\
 
 " NERDTree - toggle
 map <leader>n :NERDTreeToggle<cr>
+
+" Open the current buffer in the NERDTree
+map <C-N> :NERDTreeFind<cr>
+
+" ctags tags file generation for the current directory
+map <F8> :!ctags -R .<CR>
 
 function ToggleBackground ()
   if &background == 'light'

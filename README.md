@@ -23,7 +23,7 @@ home directory.
 
 Then do
 
-    git clone git@github.com:SweeD/swvim.git ~/.swvim
+    git clone git@github.com:zirni/swvim.git ~/.swvim
     cd ~/.swvim
     ./install.sh
 
