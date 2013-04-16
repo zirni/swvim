@@ -199,3 +199,5 @@ map <leader>z :call ToggleBackground()<cr>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+autocmd BufWritePre * :%s/\s\+$//e
