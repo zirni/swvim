@@ -1,4 +1,4 @@
-set shell=/bin/zsh
+set shell=$SHELL
 set nocompatible
 
 " Bundles for the vim plugins
