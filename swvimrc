@@ -210,3 +210,5 @@ map <leader>z :call ToggleBackground()<cr>
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
+let g:ruby_path="/usr/bin/ruby"
