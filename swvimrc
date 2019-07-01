@@ -40,12 +40,12 @@ call plug#end()
 " Set solarized-colors
 set t_Co=256
 syntax enable
-set background=light
+set background=dark
 colorscheme lucius
 " let g:solarized_termcolors=256
 
 " Leader setting
-let mapleader = ","
+let mapleader = " "
 let maplocalleader = "\\"
 
 set relativenumber
